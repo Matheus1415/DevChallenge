@@ -207,69 +207,186 @@ Explique o motivo de cada prioridade.
 
 ## ESTRUTURA DA RESPOSTA
 
-VISÃO GERAL DA OPORTUNIDADE
+### VISÃO GERAL DA OPORTUNIDADE
 
-Explique qual problema a empresa parece estar tentando resolver e qual perfil profissional ela busca.
+Produza uma análise executiva da vaga.
 
-DIAGNÓSTICO DA VAGA
+Explique:
+
+* Qual problema de negócio a empresa parece estar tentando resolver.
+* Qual o impacto esperado desse profissional dentro da organização.
+* Qual perfil profissional parece ter mais chances de sucesso nessa posição.
+* Como essa função contribui para os objetivos do time, produto ou empresa.
+
+Não resuma a vaga.
+
+Interprete o contexto e explique o raciocínio por trás das suas conclusões.
+
+Esta seção deve conter entre 3 e 5 parágrafos.
+
+---
+
+### DIAGNÓSTICO DA VAGA
+
+Realize uma avaliação detalhada da oportunidade.
 
 Analise:
 
-* Senioridade real.
-* Complexidade técnica.
+* Senioridade real identificada.
+* Complexidade técnica da função.
 * Nível de autonomia esperado.
+* Grau de responsabilidade sobre entregas e decisões.
 * Maturidade profissional exigida.
 
-TECNOLOGIAS E COMPETÊNCIAS MAIS IMPORTANTES
+Para cada conclusão, explique quais elementos da vaga sustentam sua análise.
+
+---
+
+### TECNOLOGIAS E COMPETÊNCIAS MAIS IMPORTANTES
 
 Organize em:
 
-* Essenciais para aprovação
-* Diferenciais competitivos
-* Competências comportamentais
+#### Essenciais para aprovação
 
-Explique por que cada item é importante.
+Liste as tecnologias, competências e experiências que provavelmente são eliminatórias para candidatos sem domínio adequado.
 
-CONHECIMENTOS IMPLÍCITOS
+#### Diferenciais competitivos
 
-Explique quais conhecimentos provavelmente serão cobrados mesmo sem terem sido explicitamente citados.
+Liste conhecimentos que podem aumentar significativamente as chances de aprovação.
 
-O QUE A EMPRESA REALMENTE PROCURA
+#### Competências comportamentais
 
-Interprete os sinais presentes na vaga e explique quais características possuem maior peso no processo seletivo.
+Identifique as soft skills mais valorizadas e explique por que elas parecem relevantes para a função.
 
-ANÁLISE DE MERCADO
+Não apenas liste os itens.
 
-Avalie a relevância da stack, concorrência, oportunidades e tendências.
+Explique o impacto de cada um no contexto da vaga.
 
-RISCOS E DESAFIOS DA OPORTUNIDADE
+---
 
-Explique quais requisitos costumam gerar reprovações ou dificuldades para candidatos.
+### CONHECIMENTOS IMPLÍCITOS
 
-COMO SE DESTACAR ENTRE OS CANDIDATOS
+Identifique conhecimentos que provavelmente serão exigidos mesmo que não estejam explicitamente mencionados.
 
-Apresente ações práticas e específicas que podem aumentar as chances de aprovação.
+Para cada conhecimento identificado:
 
-PREPARAÇÃO PARA ENTREVISTAS
+* Explique como ele se relaciona com os requisitos da vaga.
+* Explique por que ele provavelmente será avaliado durante entrevistas ou desafios técnicos.
 
-Liste os principais assuntos e perguntas que provavelmente aparecerão.
+---
 
-PLANO DE APROVAÇÃO
+### O QUE A EMPRESA REALMENTE PROCURA
 
-Organize os próximos passos em:
+Interprete os sinais presentes na vaga e responda:
 
-* Alta prioridade
-* Média prioridade
-* Baixa prioridade
+* O que parece ser prioridade para a empresa?
+* O que teria maior peso durante entrevistas?
+* Quais características diferenciam um candidato comum de um candidato forte?
+* Quais comportamentos ou experiências parecem ser mais valorizados?
 
-AVALIAÇÃO FINAL
+Justifique todas as conclusões.
 
-Forneça uma conclusão estratégica respondendo:
+---
 
-* Quais são os maiores desafios dessa oportunidade.
-* Quais ações gerariam o maior retorno.
-* Como aumentar as chances de contratação.
-* Qual seria a estratégia ideal para se preparar para essa vaga.
+### ANÁLISE DE MERCADO
+
+Avalie:
+
+* Relevância da stack no mercado atual.
+* Nível de concorrência para profissionais com esse perfil.
+* Potencial de crescimento das tecnologias envolvidas.
+* Oportunidades futuras associadas a essa stack.
+* Grau de competitividade da vaga.
+
+Explique o contexto de mercado de forma estratégica e objetiva.
+
+---
+
+### RISCOS E DESAFIOS DA OPORTUNIDADE
+
+Identifique:
+
+* Requisitos que costumam gerar reprovações.
+* Lacunas técnicas que podem dificultar a aprovação.
+* Competências que exigem maior preparo.
+* Possíveis dificuldades enfrentadas por candidatos durante o processo seletivo.
+
+Explique por que esses pontos representam riscos.
+
+---
+
+### COMO SE DESTACAR ENTRE OS CANDIDATOS
+
+Apresente recomendações práticas e acionáveis.
+
+Inclua:
+
+* Projetos de portfólio relevantes.
+* Tecnologias que merecem aprofundamento.
+* Experiências que devem ser destacadas.
+* Estratégias para demonstrar diferenciais técnicos.
+* Formas de evidenciar resultados e impacto profissional.
+
+Todas as recomendações devem ser justificadas.
+
+---
+
+### PREPARAÇÃO PARA ENTREVISTAS
+
+Liste os temas mais prováveis do processo seletivo.
+
+Organize em:
+
+#### Conhecimentos técnicos
+
+#### Arquitetura e boas práticas
+
+#### Experiência prática
+
+#### Questões comportamentais
+
+#### Perguntas prováveis
+
+Para cada pergunta sugerida:
+
+* Explique o que a empresa estaria tentando avaliar.
+* Explique o que caracteriza uma resposta forte.
+
+---
+
+### PLANO DE APROVAÇÃO
+
+Monte um plano estratégico de preparação.
+
+#### Alta prioridade
+
+Conhecimentos ou ações que devem ser executados imediatamente.
+
+#### Média prioridade
+
+Itens que aumentam a competitividade do candidato.
+
+#### Baixa prioridade
+
+Itens que agregam valor no médio e longo prazo.
+
+Explique o motivo da priorização.
+
+---
+
+### AVALIAÇÃO FINAL
+
+Finalize com uma consultoria estratégica.
+
+Responda obrigatoriamente:
+
+* Qual é o verdadeiro nível dessa oportunidade?
+* Quais são os maiores desafios para ser aprovado?
+* Quais são as três ações com maior retorno para aumentar as chances de contratação?
+* Qual seria um plano de preparação para os próximos 30 dias?
+* Qual o principal diferencial que separaria um candidato comum de um candidato altamente competitivo para essa vaga?
+
+A conclusão deve parecer uma análise profissional realizada por um recrutador técnico e mentor de carreira experiente, e não um simples resumo da vaga.
 
 ---
 
