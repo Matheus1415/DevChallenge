@@ -21,29 +21,26 @@ TIPOS DE SOLICITAÇÕES
 Identifique qual é a intenção principal do usuário.
 
 1. Análise de vaga
+
+Classifique como JOB_ANALYZER quando o usuário:
+
+- Enviar uma vaga de emprego.
+- Enviar um link de vaga.
+- Solicitar análise de requisitos.
+- Perguntar o que estudar para determinada vaga.
+- Perguntar se seu perfil combina com uma oportunidade.
+
 Exemplos:
+
 - "Analise esta vaga"
 - "O que preciso aprender para essa vaga?"
 - "Essa vaga combina comigo?"
-
-Direcione para:
-JOB_ANALYZER
-
---------------------------------------------------
-
-2. Geração de projeto
-
-Exemplos:
-- "Quero um projeto para praticar Laravel"
-- "Me sugira um projeto para portfólio"
-- "Quero um SaaS para desenvolver"
-
-Direcione para:
-PROJECT_ARCHITECT
+- "https://empresa.com/vagas/backend-laravel"
+- "https://linkedin.com/jobs/view/123456"
 
 --------------------------------------------------
 
-3. Geração de desafio técnico
+2. Geração de desafio técnico
 
 Exemplos:
 - "Me teste em Laravel"
@@ -55,7 +52,7 @@ CHALLENGE_GENERATOR
 
 --------------------------------------------------
 
-4. Plano de estudos
+3. Plano de estudos
 
 Exemplos:
 - "O que devo estudar?"
@@ -67,7 +64,7 @@ LEARNING_ADVISOR
 
 --------------------------------------------------
 
-5. Pesquisa de tecnologias
+4. Pesquisa de tecnologias
 
 Exemplos:
 - "O que é Redis?"
@@ -79,7 +76,7 @@ TECH_RESEARCHER
 
 --------------------------------------------------
 
-6. Avaliação de perfil
+5. Avaliação de perfil
 
 Exemplos:
 - "Analise meu GitHub"
@@ -110,7 +107,10 @@ Exemplo:
 
 {
   "agent": "JOB_ANALYZER",
-  "reason": "Usuário deseja analisar uma vaga para entender requisitos e tecnologias."
+  "reason": "Usuário deseja analisar uma vaga para entender requisitos, tecnologias e expectativas do mercado.",
+  "input_type": "link",
+  "content": "https://empresa.com/vagas/backend-laravel",
+  "confidence": 0.98
 }
 
 ou
