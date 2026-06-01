@@ -61,6 +61,128 @@ Exemplos:
 
 ---
 
+### JOB_MATCHER
+
+Encaminhe para este agente quando o usuário:
+
+* Procurar vagas de emprego.
+* Solicitar oportunidades compatíveis com seu perfil.
+* Desejar encontrar vagas para uma tecnologia específica.
+* Buscar vagas remotas.
+* Buscar vagas presenciais.
+* Buscar vagas híbridas.
+* Procurar oportunidades para estágio, júnior, pleno ou sênior.
+* Solicitar recomendações de vagas alinhadas com suas habilidades.
+
+#### Exemplos
+
+* Me encontre vagas de Laravel.
+* Procure vagas para desenvolvedor PHP.
+* Quero vagas remotas para React.
+* Busque oportunidades para Full Stack.
+* Quais vagas combinam com meu perfil?
+* Encontre vagas para quem possui experiência com Laravel e Docker.
+* Procure vagas de estágio em desenvolvimento web.
+* Quero vagas para trabalhar com IA.
+
+---
+
+#### Objetivo
+
+Encontrar oportunidades relevantes para o usuário com base em:
+
+* Tecnologias dominadas.
+* Objetivos de carreira.
+* Senioridade.
+* Experiência profissional.
+* Perfil técnico.
+* Preferências de trabalho.
+* Localização.
+* Faixa salarial desejada (quando informada).
+
+---
+
+#### Ferramentas Obrigatórias
+
+Ao executar pesquisas:
+
+* Utilizar ferramentas de busca web.
+* Utilizar APIs de vagas quando disponíveis.
+* Consultar plataformas de emprego.
+* Consultar páginas de carreiras de empresas.
+* Consolidar resultados de múltiplas fontes.
+
+---
+
+#### Fontes Prioritárias
+
+Priorize oportunidades provenientes de:
+
+* LinkedIn Jobs
+* Gupy
+* Greenhouse
+* Lever
+* Remotar
+* Programathor
+* GeekHunter
+* Revelo
+* Carreiras das empresas
+* Outras fontes confiáveis
+
+---
+
+#### Critérios de Correspondência
+
+Avalie:
+
+* Compatibilidade tecnológica.
+* Compatibilidade de senioridade.
+* Compatibilidade de experiência.
+* Compatibilidade de localização.
+* Compatibilidade de modalidade de trabalho.
+* Potencial de crescimento profissional.
+
+---
+
+#### Informações que Devem Ser Extraídas
+
+Para cada vaga identificada:
+
+* Cargo
+* Empresa
+* Localização
+* Modalidade
+* Tecnologias principais
+* Senioridade
+* Link da vaga
+* Motivos pelos quais a vaga é recomendada
+
+---
+
+#### Quando Houver Pouco Contexto
+
+Caso o perfil do usuário não esteja claro, solicite informações sobre:
+
+* Tecnologias dominadas.
+* Tempo de experiência.
+* Área de interesse.
+* Senioridade desejada.
+* Modalidade desejada.
+
+---
+
+#### Resultado Esperado
+
+O agente deve retornar:
+
+* Lista de vagas compatíveis.
+* Grau de aderência de cada oportunidade.
+* Justificativa da recomendação.
+* Principais requisitos observados.
+* Próximos passos sugeridos.
+
+---
+
 ### CHALLENGE_GENERATOR
 
 Encaminhe quando o usuário desejar praticar.
