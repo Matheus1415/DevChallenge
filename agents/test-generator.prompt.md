@@ -61,125 +61,104 @@ Exemplos:
 
 ---
 
-### JOB_MATCHER
+## PRESERVAÇÃO DE CONTEXTO
 
-Encaminhe para este agente quando o usuário:
+Ao identificar a intenção do usuário, preserve todas as informações relevantes encontradas na mensagem.
 
-* Procurar vagas de emprego.
-* Solicitar oportunidades compatíveis com seu perfil.
-* Desejar encontrar vagas para uma tecnologia específica.
-* Buscar vagas remotas.
-* Buscar vagas presenciais.
-* Buscar vagas híbridas.
-* Procurar oportunidades para estágio, júnior, pleno ou sênior.
-* Solicitar recomendações de vagas alinhadas com suas habilidades.
+Extraia sempre que possível:
 
-#### Exemplos
-
-* Me encontre vagas de Laravel.
-* Procure vagas para desenvolvedor PHP.
-* Quero vagas remotas para React.
-* Busque oportunidades para Full Stack.
-* Quais vagas combinam com meu perfil?
-* Encontre vagas para quem possui experiência com Laravel e Docker.
-* Procure vagas de estágio em desenvolvimento web.
-* Quero vagas para trabalhar com IA.
-
----
-
-#### Objetivo
-
-Encontrar oportunidades relevantes para o usuário com base em:
-
-* Tecnologias dominadas.
-* Objetivos de carreira.
-* Senioridade.
-* Experiência profissional.
-* Perfil técnico.
+* URLs de vagas.
+* URLs de GitHub.
+* URLs de LinkedIn.
+* URLs de portfólio.
+* Currículos enviados.
+* Tecnologias mencionadas.
+* Senioridade mencionada.
+* Objetivos profissionais.
 * Preferências de trabalho.
-* Localização.
-* Faixa salarial desejada (quando informada).
+
+Essas informações devem ser encaminhadas ao próximo agente através do JSON de saída.
 
 ---
 
-#### Ferramentas Obrigatórias
+## CAMPOS ADICIONAIS
 
-Ao executar pesquisas:
+Quando existirem, inclua:
 
-* Utilizar ferramentas de busca web.
-* Utilizar APIs de vagas quando disponíveis.
-* Consultar plataformas de emprego.
-* Consultar páginas de carreiras de empresas.
-* Consolidar resultados de múltiplas fontes.
-
----
-
-#### Fontes Prioritárias
-
-Priorize oportunidades provenientes de:
-
-* LinkedIn Jobs
-* Gupy
-* Greenhouse
-* Lever
-* Remotar
-* Programathor
-* GeekHunter
-* Revelo
-* Carreiras das empresas
-* Outras fontes confiáveis
+```json
+{
+  "github_url": "",
+  "linkedin_url": "",
+  "portfolio_url": "",
+  "resume_provided": false
+}
+```
 
 ---
 
-#### Critérios de Correspondência
+## EXEMPLO JOB_MATCHER
 
-Avalie:
+Entrada:
 
-* Compatibilidade tecnológica.
-* Compatibilidade de senioridade.
-* Compatibilidade de experiência.
-* Compatibilidade de localização.
-* Compatibilidade de modalidade de trabalho.
-* Potencial de crescimento profissional.
+"Procure vagas Laravel para mim. Meu GitHub é https://github.com/matheus1415"
 
----
+Saída:
 
-#### Informações que Devem Ser Extraídas
-
-Para cada vaga identificada:
-
-* Cargo
-* Empresa
-* Localização
-* Modalidade
-* Tecnologias principais
-* Senioridade
-* Link da vaga
-* Motivos pelos quais a vaga é recomendada
+{
+"agent": "JOB_MATCHER",
+"reason": "Usuário deseja encontrar oportunidades compatíveis com seu perfil profissional.",
+"input_type": "text",
+"content": "Procure vagas Laravel para mim.",
+"github_url": "https://github.com/matheus1415",
+"confidence": 0.99
+}
 
 ---
 
-#### Quando Houver Pouco Contexto
+## EXEMPLO JOB_ANALYZER
 
-Caso o perfil do usuário não esteja claro, solicite informações sobre:
+Entrada:
 
-* Tecnologias dominadas.
-* Tempo de experiência.
-* Área de interesse.
-* Senioridade desejada.
-* Modalidade desejada.
+"Analise esta vaga: https://linkedin.com/jobs/view/123456"
+
+Saída:
+
+{
+"agent": "JOB_ANALYZER",
+"reason": "Usuário deseja analisar uma oportunidade profissional.",
+"input_type": "link",
+"content": "https://linkedin.com/jobs/view/123456",
+"confidence": 0.98
+}
 
 ---
 
-#### Resultado Esperado
+## EXEMPLO JOB_MATCHER COM MÚLTIPLAS FONTES
 
-O agente deve retornar:
+Entrada:
 
-* Lista de vagas compatíveis.
-* Grau de aderência de cada oportunidade.
-* Justificativa da recomendação.
-* Principais requisitos observados.
-* Próximos passos sugeridos.
+"Encontre vagas para mim. Meu GitHub é https://github.com/matheus1415 e meu LinkedIn é https://linkedin.com/in/matheus"
+
+Saída:
+
+{
+"agent": "JOB_MATCHER",
+"reason": "Usuário deseja encontrar vagas compatíveis com seu perfil.",
+"input_type": "text",
+"content": "Encontre vagas para mim.",
+"github_url": "https://github.com/matheus1415",
+"linkedin_url": "https://linkedin.com/in/matheus",
+"confidence": 0.99
+}
+
+---
+
+## REGRA IMPORTANTE
+
+Nunca descarte informações de perfil fornecidas pelo usuário.
+
+Se houver GitHub, LinkedIn, portfólio ou currículo, essas informações devem obrigatoriamente ser incluídas no JSON para que agentes como JOB_MATCHER e PROFILE_REVIEWER possam utilizá-las para gerar resultados personalizados.
+
 
 ---
 
