@@ -85,14 +85,12 @@ Essas informações devem ser encaminhadas ao próximo agente através do JSON d
 
 Quando existirem, inclua:
 
-```json
 {
   "github_url": "",
   "linkedin_url": "",
   "portfolio_url": "",
   "resume_provided": false
 }
-```
 
 ---
 
