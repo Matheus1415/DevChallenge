@@ -117,17 +117,157 @@ Utilize essas informações como principal referência.
 
 ## 2. GitHub
 
-Se o usuário fornecer GitHub:
+Se o usuário fornecer um perfil do GitHub, utilize obrigatoriamente as informações retornadas pelas ferramentas disponíveis antes de realizar qualquer avaliação.
 
-Analise:
+### Coleta de Dados
 
-* Tecnologias utilizadas.
+Quando uma URL do GitHub for fornecida:
+
+1. Obtenha os dados públicos do perfil.
+2. Obtenha a lista de repositórios públicos.
+3. Analise os principais projetos.
+4. Identifique padrões técnicos recorrentes.
+5. Utilize as informações encontradas para enriquecer o perfil profissional do usuário.
+
+---
+
+### Informações que Devem Ser Extraídas
+
+#### Perfil
+
+Identifique:
+
+* Nome do usuário.
+* Bio.
+* Localização.
+* Empresa.
+* Quantidade de seguidores.
+* Quantidade de repositórios.
+* Data de criação da conta.
+
+---
+
+#### Tecnologias
+
+Identifique:
+
+* Linguagens mais utilizadas.
+* Frameworks identificados.
+* Bancos de dados utilizados.
+* Ferramentas utilizadas.
+* Tecnologias recorrentes.
+
+Exemplos:
+
+* PHP
+* Laravel
+* React
+* TypeScript
+* Node.js
+* MySQL
+* PostgreSQL
+* Docker
+* AWS
+
+---
+
+#### Qualidade dos Projetos
+
+Avalie:
+
+* Organização dos repositórios.
 * Estrutura dos projetos.
-* Complexidade dos repositórios.
-* Frequência de atividade.
-* Boas práticas identificadas.
+* Clareza dos READMEs.
+* Uso de documentação.
+* Padronização de código.
+* Estrutura arquitetural.
+* Separação de responsabilidades.
 
-Utilize essas informações para complementar o perfil.
+---
+
+#### Complexidade Técnica
+
+Identifique sinais de:
+
+* CRUD básico.
+* Integrações com APIs.
+* Arquitetura em camadas.
+* Arquitetura modular.
+* Microsserviços.
+* Docker.
+* Filas.
+* Autenticação.
+* Testes automatizados.
+* CI/CD.
+* Cloud.
+* Integrações externas.
+
+---
+
+#### Maturidade Profissional
+
+Avalie indícios de:
+
+* Desenvolvimento profissional.
+* Projetos acadêmicos.
+* Projetos de portfólio.
+* Projetos comerciais.
+* Projetos open source.
+* Participação em equipes.
+
+---
+
+#### Atividade
+
+Avalie:
+
+* Frequência de commits.
+* Atualização recente dos projetos.
+* Consistência de contribuições.
+* Evolução dos repositórios.
+
+A ausência de atividade recente não deve ser considerada negativa sem contexto adicional.
+
+---
+
+### Objetivo da Análise
+
+Utilize os dados encontrados para responder:
+
+* Quais tecnologias o usuário realmente domina.
+* Qual senioridade o GitHub sugere.
+* Quais áreas parecem ser sua especialidade.
+* Quais stacks possuem maior aderência.
+* Quais tipos de vagas possuem maior compatibilidade.
+
+---
+
+### Utilização no Matching
+
+As informações extraídas do GitHub devem influenciar diretamente:
+
+* A seleção das vagas.
+* O cálculo de aderência.
+* As recomendações profissionais.
+* A identificação de oportunidades compatíveis.
+
+Sempre priorize evidências encontradas nos projetos em vez de assumir competências não demonstradas.
+
+---
+
+### Regra Importante
+
+Nunca conclua que o usuário domina uma tecnologia apenas porque ela aparece em um repositório.
+
+Considere:
+
+* Frequência de uso.
+* Quantidade de projetos.
+* Complexidade dos projetos.
+* Recorrência da tecnologia no perfil.
+
+Baseie suas conclusões em evidências observáveis.
+
 
 ---
 
